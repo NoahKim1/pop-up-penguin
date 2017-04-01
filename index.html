@@ -8,8 +8,8 @@
 <body>
 	<div id="gameholder">
         <div id="title"></div>
-        <div class="penguin1"></div>
-        <div class="penguin2"></div>
+        <div class="penguin1" onclick="document.getElementById('spongebob').play()"></div>
+        <div class="penguin2" onclick="document.getElementById('spongebob').play()""></div>
         <div class="penguin3"></div>
         <div class="penguin4"></div>
         <div class="penguin5"></div>
@@ -19,6 +19,9 @@
         <div class="yeti" onmousedown="roar()"></div>
 
     </div>
+     <audio id="spongebob">
+    <source src="spongebob.mp3" type="audio/mpeg">
+  </audio>
 </body>
 	<script type="text/javascript" src="app.js"></script>
 </html>
